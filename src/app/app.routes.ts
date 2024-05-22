@@ -4,13 +4,15 @@ import { LoginComponent } from './login/login.component';
 import { AboutComponent } from './about/about.component';
 import { CategoriaComponent } from './categoria/categoria.component';
 import { autorizacaoGuard } from './_guard/autorizacao.guard';
+import { CursosComponent } from './cursos/cursos.component';
 
- 
+
 export const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'home', component: HomeComponent },
     { path: 'login', component: LoginComponent},
     { path: 'about', component: AboutComponent},
+    { path: 'cursos', component: CursosComponent},
     { path: 'categoria', component: CategoriaComponent, canActivate: [autorizacaoGuard] }
 
 ];

@@ -13,7 +13,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 
 import { RouterLink } from '@angular/router';
 import { MatInputModule } from '@angular/material/input';
-import {MatMenuModule} from '@angular/material/menu';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
     imports: [MatSidenavModule, MatListModule, MatCheckboxModule,
@@ -27,8 +27,8 @@ import {MatMenuModule} from '@angular/material/menu';
               MatDialogModule, MatCardModule, ReactiveFormsModule,
               MatInputModule, MatDividerModule, MatSidenav, MatMenuModule ],
 })
- 
+
 export class MaterialModule {
- 
+
  }
- 
+
