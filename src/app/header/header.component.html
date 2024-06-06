@@ -1,11 +1,13 @@
 <mat-toolbar>
 
-  <a [routerLink]="['/home']"> <img src="assets/images/logo2.png" alt="SoftSolutions" class="toolbar-logo"> </a>
+  <a [routerLink]="['/home']"> <img src="assets/images/logo.png" alt="SoftSolutions" class="toolbar-logo"> </a>
 
-    <button mat-icon-button [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon></button>
+    <button mat-icon-button [matMenuTriggerFor]="menu" class="icone"><mat-icon >menu</mat-icon></button>
     <mat-menu #menu="matMenu">
     <button mat-menu-item [routerLink]="['/cursos']">Cursos</button>
-    <button mat-menu-item>Item 2</button>
+    <button mat-menu-item [routerLink]="['/login']">Login</button>
+    <button mat-menu-item [routerLink]="['/quem-somos']">Sobre</button>
+    <button mat-menu-item>Meu Perfil</button>
     <button mat-menu-item > <mat-icon>settings</mat-icon> <span>Configurações</span> </button>
 
 </mat-menu>

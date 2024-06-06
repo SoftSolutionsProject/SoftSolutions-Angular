@@ -1,9 +1,15 @@
 mat-toolbar {
-  background-color: var(--cor-primaria);
+  background-color: var(--cor-componentes);
+  border-bottom: 1px solid #565252;
 }
 
 .toolbar-logo {
   max-height: 40px;
   width: auto;
   border-top: 20px;
+}
+
+.icone{
+color: aliceblue;
+
 }

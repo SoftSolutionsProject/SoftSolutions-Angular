@@ -3,9 +3,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
 :root {
-  --cor-primaria: #125887; /* Azul */
-  --cor-secundaria: #2ecc71; /* Verde */
-  --cor-fundo: #000;
+  --cor-primaria: #125887;
+  --cor-secundaria: #2ecc71;
+  --cor-fundo: #101011;
+  --cor-componentes: #080709;
 }
 
 
