@@ -6,6 +6,11 @@ import { CategoriaComponent } from './categoria/categoria.component';
 import { autorizacaoGuard } from './_guard/autorizacao.guard';
 import { CursosComponent } from './cursos/cursos.component';
 import { QuemSomosComponent } from './quem-somos/quem-somos.component';
+import { CadastroComponent } from './cadastro/cadastro.component';
+import { TabelaComponent } from './tabela/tabela.component';
+import { CertificadosComponent } from './certificados/certificados.component';
+import { CursoDesenvolvimentoWebComponent } from './curso-desenvolvimento-web/curso-desenvolvimento-web.component';
+import { ContatoComponent } from './contato/contato.component';
 
 
 export const routes: Routes = [
@@ -16,4 +21,12 @@ export const routes: Routes = [
     { path: 'cursos', component: CursosComponent},
     { path: 'categoria', component: CategoriaComponent, canActivate: [autorizacaoGuard] },
     { path: 'quem-somos', component: QuemSomosComponent},
+    { path: 'cadastro', component: CadastroComponent},
+    { path: 'tabela', component: TabelaComponent},
+    { path: 'cadastro', component: CadastroComponent},
+    { path: 'certificados', component: CertificadosComponent},
+    { path: 'curso-desenvolvimento-web', component: CursoDesenvolvimentoWebComponent},
+    { path: 'contato', component: ContatoComponent},
+    { path: 'home', component: HomeComponent},
+
 ];
