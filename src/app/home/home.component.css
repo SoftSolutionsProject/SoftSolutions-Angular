@@ -1,161 +1,85 @@
-.home2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #f8f9fa;
-}
-
-.home2 .bg {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: url('/assets/images/home/bg-home.jpg') center center;
-  background-size: cover;
-  opacity: .5;
-  width: 100%;
-  height: 100%;
-}
-
-section.cta-home {
-  margin: 5rem 0;
-  text-align: center;
-}
-
-.col-cta {
-  margin-bottom: 2rem;
-}
-
-.col-cta img {
-  max-width: 100%;
-}
-
-.cta h1 {
-  text-transform: uppercase;
-  color: #4687C2;
-  font-family: Poppins, sans-serif;
-  font-size: 32px;
-  font-weight: 400;
-  margin-bottom: 2rem;
-}
-
-.cta h1 span {
-  color: #FFF;
-}
-
-.cta p {
-  color: #FFF;
-  text-align: center;
-  font-family: Poppins, sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  margin-bottom: 2rem;
-}
-
-.cta .btn-cta {
-  color: #000081;
-  font-family: Poppins, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  background: #DEDEDE;
-  border-radius: 40.5px;
-  padding: .75rem 1rem;
-  text-decoration: none;
-}
-
-.row-cursos {
-  justify-content: center;
+.container {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
-}
+  justify-content: center; /* Centraliza os cards */
+  gap: 50px;
+  padding: 20px;
+  background-color: black;
+ }
 
-.curso {
-  border-radius: 30px;
-  background: #FFF;
-  box-shadow: 3px 4px 6px 2px rgba(255, 255, 255, 0.13);
+.card {
+  flex: 1 1 300px; /* Defina a largura inicial dos cards */
+  max-width: 300px; /* Largura máxima dos cards */
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  margin: 10px;
-  flex: 0 0 300px;
+  border: solid .1px #ffffff;
 }
 
-.curso img {
+.card-img-top-wrapper {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  overflow: hidden;
+}
+
+.card-img-top {
   width: 100%;
-  margin: 0;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
+  height: auto;
+  display: block;
 }
 
-.curso h2 {
-  color: #000081;
-  font-family: Poppins, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  margin-bottom: 1rem;
+.card-body {
+  padding: 20px;
+  overflow: hidden;
 }
 
-.curso {
-  border-radius: 30px;
-  background: #FFF;
-  box-shadow: 3px 4px 6px 2px rgba(255, 255, 255, 0.13);
-  text-align: center;
-  padding: 1rem;
-  margin: 10px;
-  flex: 0 0 300px;
+.card-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
 }
 
-.curso .txt-cursos {
-  justify-content: space-between;
+.card-text {
   display: flex;
-  flex-direction: row;
-  margin-bottom: 1rem;
+  align-items: center;
+  justify-content: center;
 }
 
-.curso div.estrelas {
-  width: 40%;
+.rating {
+  display: flex;
+  margin-left: 10px;
 }
 
-.curso div.estrelas img {
-  max-width: 13px !important;
+.rating img {
+  width: 15px;
+  height: 15px;
 }
 
-.btn-curso {
+.btn {
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
   border-radius: 5px;
-  background: #DEDEDE;
-  text-decoration: none;
-  color: #000;
-  font-family: Poppins, sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  padding: .25rem .75rem;
+  cursor: pointer;
+  color: rgb(2, 2, 2);
+  background-color: #DEDEDE;
+  transition: background-color 0.3s;
+  border: 1px solid #868282;
 }
 
-.card{
-  width: 18rem;
-  margin: 15px;
-}
-.card-title{
-  text-align: center;
+.btn:hover {
+  background-color: #CCCCCC;
 }
 
-.btn-curso {
-  border-radius: 5px;
-  background: #DEDEDE;
-  text-decoration: none;
-  color: #000;
-  font-family: Poppins;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  padding: .25rem .75rem;
+/* Media queries para ajustar a quantidade de colunas com base no tamanho da tela */
+@media screen and (max-width: 768px) {
+  .card {
+    flex: 1 1 100%; /* Para uma coluna em telas menores */
+  }
 }
 
-.btn-secondary{
-color: rgb(2, 2, 2);
-background-color:#DEDEDE;
-text-align: center;
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .card {
+    flex: 1 1 45%; /* Para duas colunas em telas médias */
+  }
 }
-
