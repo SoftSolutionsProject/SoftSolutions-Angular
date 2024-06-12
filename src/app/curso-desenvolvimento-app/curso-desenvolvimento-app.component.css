@@ -1,25 +1,24 @@
-div.desenvolvimento {
-  position: relative;
-  z-index: 5;
-  height: 100%;
-  width: 100%;
-  background-color: #000000;
-  display: block;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
-}
+  .desenvolvimento {
+    position: relative;
+    z-index: 5;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    display: block;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
 
-
-
-
-.cta-curso {
-    margin:  3rem;
+  .cta-curso {
+    margin: 3rem;
     background-color: #DEDEDE;
     border-radius: 20px;
     place-items: center;
     padding: 2rem 0 2rem 3rem;
+  }
 
-    @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1200px) {
+    .cta-curso {
       padding: 2rem 1rem;
     }
   }
@@ -31,8 +30,10 @@ div.desenvolvimento {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+  }
 
-    @media screen and (max-width:768px) {
+  @media screen and (max-width: 768px) {
+    .cta-curso .cta h1 {
       font-size: 20px;
     }
   }
@@ -46,8 +47,10 @@ div.desenvolvimento {
     line-height: normal;
     text-align: left;
     margin-bottom: 3rem;
+  }
 
-    @media screen and (max-width:768px) {
+  @media screen and (max-width: 768px) {
+    .cta-curso .cta p {
       font-size: 16px;
     }
   }
@@ -67,17 +70,22 @@ div.desenvolvimento {
     justify-content: center;
     place-items: center;
     margin-right: 20px;
+  }
 
-    @media screen and (max-width: 992px) {
+  @media screen and (max-width: 992px) {
+    .cta-curso .cta .detalhes .detalhe {
       width: 50%;
       margin-right: 0;
-      .card-container {
-        flex-direction: column;
-        align-items: center;
-      }
     }
 
-    @media screen and (max-width: 500px) {
+    .card-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .cta-curso .cta .detalhes .detalhe {
       width: 100%;
     }
   }
@@ -110,11 +118,6 @@ div.desenvolvimento {
     }
   }
 
-
-
-
-
-
   .ementa {
     background-color: #DEDEDE;
     border-radius: 20px;
@@ -132,7 +135,7 @@ div.desenvolvimento {
     text-align: center;
   }
 
-  .ementa .row-ementa{
+  .ementa .row-ementa {
     margin-top: 2rem;
   }
 
@@ -159,16 +162,9 @@ div.desenvolvimento {
     line-height: normal;
   }
 
-
-
-
-
-
-
-
   .card {
-    flex: 1 1 300px; /* Largura inicial dos cards */
-    max-width: 300px; /* Largura máxima dos cards */
+    flex: 1 1 300px;
+    max-width: 300px;
     background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -180,7 +176,7 @@ div.desenvolvimento {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     overflow: hidden;
-    height: 200px; /* Altura fixa para as imagens */
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
