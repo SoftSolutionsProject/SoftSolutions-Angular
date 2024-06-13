@@ -1,3 +1,4 @@
+import { Component } from '@angular/core';
 import { CursosPythonExecutarComponent } from './cursos-executar/cursos-python-executar/cursos-python-executar.component';
 import { CursoPythonInicianteComponent } from './curso-python-iniciante/curso-python-iniciante.component';
 import {  Routes } from '@angular/router';
@@ -15,6 +16,7 @@ import { CursoDesenvolvimentoWebComponent } from './curso-desenvolvimento-web/cu
 import { ContatoComponent } from './contato/contato.component';
 import { CursoDesenvolvimentoAppComponent } from './curso-desenvolvimento-app/curso-desenvolvimento-app.component';
 import { CursosDesenvolvimentoWebExecutarComponent } from './cursos-executar/cursos-desenvolvimento-web-executar/cursos-desenvolvimento-web-executar.component';
+import { PerfilComponent } from './perfil/perfil.component';
 
 
 export const routes: Routes = [
@@ -35,4 +37,5 @@ export const routes: Routes = [
     { path: 'curso-python-iniciante', component: CursoPythonInicianteComponent},
     { path: 'curso-desenvolvimento-web-executar', component: CursosDesenvolvimentoWebExecutarComponent},
     { path: 'curso-python-iniciante-executar', component:CursosPythonExecutarComponent},
+    { path: 'perfil', component:PerfilComponent},
 ];
