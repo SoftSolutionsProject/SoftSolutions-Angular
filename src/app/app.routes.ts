@@ -1,3 +1,4 @@
+import { CursosPythonExecutarComponent } from './cursos-executar/cursos-python-executar/cursos-python-executar.component';
 import { CursoPythonInicianteComponent } from './curso-python-iniciante/curso-python-iniciante.component';
 import {  Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
@@ -33,4 +34,5 @@ export const routes: Routes = [
     { path: 'curso-desenvolvimento-app', component: CursoDesenvolvimentoAppComponent},
     { path: 'curso-python-iniciante', component: CursoPythonInicianteComponent},
     { path: 'curso-desenvolvimento-web-executar', component: CursosDesenvolvimentoWebExecutarComponent},
+    { path: 'curso-python-iniciante-executar', component:CursosPythonExecutarComponent},
 ];
