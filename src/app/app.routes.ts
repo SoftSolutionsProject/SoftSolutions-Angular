@@ -39,3 +39,4 @@ export const routes: Routes = [
     { path: 'curso-python-iniciante-executar', component:CursosPythonExecutarComponent},
     { path: 'perfil', component:PerfilComponent},
 ];
+
