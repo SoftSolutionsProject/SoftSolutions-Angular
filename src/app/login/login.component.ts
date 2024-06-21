@@ -1,10 +1,14 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { MaterialModule } from '../material.module';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-login',
+  standalone: true,
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  styleUrls: ['./login.component.css'],
+  imports: [MaterialModule, CommonModule],
 })
 export class LoginComponent {
 
@@ -16,16 +20,19 @@ export class LoginComponent {
     { position: 3, email: 'caio@softsolutions.com', senha: 10079 },
   ];
 
+  errorMessage: string | null = null;
+
   onLoginSubmit(event: Event) {
     event.preventDefault();
     const emailInput = (document.getElementById('inputEmail') as HTMLInputElement).value;
-    
-    const userExists = this.USER_DATA.some(user => user.email === emailInput);
+    const senhaInput = (document.getElementById('inputSenha') as HTMLInputElement).value;
 
-    if (userExists) {
+    const user = this.USER_DATA.find(user => user.email === emailInput && user.senha.toString() === senhaInput);
+
+    if (user) {
       this.router.navigate(['/perfil']);
     } else {
-      this.router.navigate(['/cadastro']);
+      this.errorMessage = "Verifique seu e-mail e senha ou cadastre-se.";
     }
   }
 }
