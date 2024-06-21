@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { MaterialModule } from '../material.module';
 import { CommonModule } from '@angular/common';
+import { UserService } from '../user.service';  // Importa o serviço
 
 @Component({
   selector: 'app-login',
@@ -12,13 +13,7 @@ import { CommonModule } from '@angular/common';
 })
 export class LoginComponent {
 
-  constructor(private router: Router) {}
-
-  USER_DATA = [
-    { position: 1, email: 'lucas@softsolutions.com', senha: 1234 },
-    { position: 2, email: 'rafael@softsolutions.com', senha: 1234 },
-    { position: 3, email: 'caio@softsolutions.com', senha: 1234 },
-  ];
+  constructor(private router: Router, private userService: UserService) {}  // Injeta o serviço
 
   errorMessage: string | null = null;
 
@@ -27,7 +22,7 @@ export class LoginComponent {
     const emailInput = (document.getElementById('inputEmail') as HTMLInputElement).value;
     const senhaInput = (document.getElementById('inputSenha') as HTMLInputElement).value;
 
-    const user = this.USER_DATA.find(user => user.email === emailInput && user.senha.toString() === senhaInput);
+    const user = this.userService.validateUser(emailInput, senhaInput);  // Usa o serviço
 
     if (user) {
       this.router.navigate(['/perfil']);
