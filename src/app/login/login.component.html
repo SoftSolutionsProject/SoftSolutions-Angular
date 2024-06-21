@@ -26,13 +26,13 @@
             </div>
             <p *ngIf="errorMessage" class="text-danger">{{ errorMessage }}</p>
             <p class="mb-4 light">
-              <a href="#">ESQUECI MINHA SENHA!</a>
+              <a [routerLink]="['/recuperar-senha']">ESQUECI MINHA SENHA!</a>
             </p>
             <p class="light">
-              <a href="/cadastro.html">Não possui cadastro?</a>
+              <a routerLink="/cadastro">Não possui cadastro?</a>
             </p>
             <div class="mt-4">
-              <button type="reset" onclick="window.location.href='/cadastro.html'" class="btn btn-secondary btn-md w-50">Cadastrar</button>
+              <button type="button" [routerLink]="['/cadastro']" class="btn btn-secondary btn-md w-50">Cadastrar</button>
             </div>
           </div>
         </form>

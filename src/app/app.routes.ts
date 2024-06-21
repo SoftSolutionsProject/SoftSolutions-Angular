@@ -17,6 +17,7 @@ import { ContatoComponent } from './contato/contato.component';
 import { CursoDesenvolvimentoAppComponent } from './curso-desenvolvimento-app/curso-desenvolvimento-app.component';
 import { CursosDesenvolvimentoWebExecutarComponent } from './cursos-executar/cursos-desenvolvimento-web-executar/cursos-desenvolvimento-web-executar.component';
 import { PerfilComponent } from './perfil/perfil.component';
+import { RecuperarSenhaComponent } from './recuperar-senha/recuperar-senha.component';
 
 
 export const routes: Routes = [
@@ -38,5 +39,7 @@ export const routes: Routes = [
     { path: 'curso-desenvolvimento-web-executar', component: CursosDesenvolvimentoWebExecutarComponent},
     { path: 'curso-python-iniciante-executar', component:CursosPythonExecutarComponent},
     { path: 'perfil', component:PerfilComponent},
+    { path: 'recuperar-senha', component: RecuperarSenhaComponent},
+
 ];
 
